@@ -17,6 +17,10 @@
  * @param NB_missile
  * @return type missile (le choix du type de missille)
  */
+
+// fonction impact commence à la ligne 114 a partir de la ligne 130 on commence a essayer d'affecter la veleur des points de vie des bateaux, j'ai mis des printf donnant 
+// la valeur pour verifier qu'on accede bien aux valeurs et pour voir si on arrivait a motiver
+
 char choix_type_missile(inventaire *NB_missile, char tableau[10][10], char grille[10][10], boat *Bateaux2,boat *Bateaux3_1,boat *Bateaux3,boat *Bateaux4,boat *Bateaux5, int visible) {
    // la fontion qui demande le choix du missile et appelera les differents codes de chaque missile
    // elle ne s'arretera pas tant qu'il reste des missiles
@@ -126,7 +130,7 @@ void impact(char tableau[10][10], char grille[10][10], int ligne, int colonne, i
 // j'ai essayé de faire des essais en faisant des soustractions ou avec un switch pour changer directement la valeur, apres le premier changment cela n'est plus possible
 // on peut modifier chaque point de vie une fois suelement
 
-
+// lesp rintf permettent de voir qu'un nouveau missile ne remet pas les valeurs des points de vie aux valeurs initiales
         if (grille[colonne][ligne] == '5' ) {
 
             // le on rentre bien dans la boucle me permet de voir que c'est bien le changement de la valeur qui pose probleme
